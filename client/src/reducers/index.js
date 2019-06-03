@@ -1,5 +1,5 @@
-import { combineReducers } from 'redux';
-import newsReducer from './newsReducer';
+import { combineReducers } from "redux";
+import newsReducer from "./newsReducer";
 
 const allReducers = combineReducers({
   newsReducer

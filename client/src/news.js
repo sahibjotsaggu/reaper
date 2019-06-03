@@ -1,10 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import * as actions from 'actions';
+import React from "react";
+import { connect } from "react-redux";
+import * as actions from "actions";
 
 class News extends React.Component {
   getNews = () => {
-    this.props.getNews('AAPL, TSLA');
+    this.props.getNews("AAPL, TSLA");
   };
 
   render() {
@@ -12,7 +12,7 @@ class News extends React.Component {
     return (
       <div>
         <button onClick={this.getNews}>Get News</button>
-        {isRequesting && 'loading...'}
+        {isRequesting && "loading..."}
       </div>
     );
   }

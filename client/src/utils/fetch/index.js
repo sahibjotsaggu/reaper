@@ -21,12 +21,12 @@ export const _fetch = {
       });
     }
 
-    let headers = { 'Content-Type': 'application/json' };
+    let headers = { "Content-Type": "application/json" };
 
-    params.host = params.host || 'http://localhost:8080/api';
+    params.host = params.host || "http://localhost:8080/api";
     return fetch(`${params.host}/${params.url}`, {
-      method: params.method ? params.method.toUpperCase() : 'GET',
-      body: params.method === 'GET' ? undefined : JSON.stringify(params.data),
+      method: params.method ? params.method.toUpperCase() : "GET",
+      body: params.method === "GET" ? undefined : JSON.stringify(params.data),
       headers
     }).then(jsonifyResponse);
   }

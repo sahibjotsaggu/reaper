@@ -1,4 +1,4 @@
-import * as ActionTypes from 'actions/constants';
+import * as ActionTypes from "actions/constants";
 
 /**
  * makeReducer

@@ -1,3 +1,3 @@
-import { getNews } from './news';
+import { getNews } from "./news";
 
 export { getNews };

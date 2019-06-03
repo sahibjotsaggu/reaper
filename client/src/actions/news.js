@@ -1,10 +1,10 @@
-import { makeActionCreator } from 'utils/redux-helpers';
-import * as ActionTypes from 'actions/constants';
-import { _fetch as fetch } from 'utils/fetch';
+import { makeActionCreator } from "utils/redux-helpers";
+import * as ActionTypes from "actions/constants";
+import { _fetch as fetch } from "utils/fetch";
 
 const requesting = makeActionCreator(ActionTypes.GET);
-const error = makeActionCreator(ActionTypes.GET_FAILURE, 'error');
-const success = makeActionCreator(ActionTypes.GET_SUCCESS, 'payload');
+const error = makeActionCreator(ActionTypes.GET_FAILURE, "error");
+const success = makeActionCreator(ActionTypes.GET_SUCCESS, "payload");
 
 export const getNews = symbols => {
   return async dispatch => {
@@ -17,7 +17,7 @@ export const getNews = symbols => {
     if (res.news.length) {
       dispatch(success(res.news));
     } else {
-      dispatch(error('no news'));
+      dispatch(error("no news"));
     }
   };
 };

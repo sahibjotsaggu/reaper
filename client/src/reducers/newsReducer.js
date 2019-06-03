@@ -1,4 +1,4 @@
-import { makeReducer } from 'utils/redux-helpers';
+import { makeReducer } from "utils/redux-helpers";
 
 const initialState = {
   isRequesting: false,
